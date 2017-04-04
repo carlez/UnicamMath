@@ -14,7 +14,10 @@ namespace UnicamMath
             Console.Write("Inserisci la lunghezza del secondo cateto: ");
             string cateto2Testuale = Console.ReadLine();
 
-            double ipotenusa = 0;
+            double cateto1 = double.Parse(cateto1Testuale);
+            double cateto2 = double.Parse(cateto2Testuale);
+
+            double ipotenusa = Math.Sqrt(Math.Pow(cateto1,2)+Math.Pow(cateto2,2));
             double angolo1 = 90;
             double angolo2 = 0;
             double angolo3 = 0;
